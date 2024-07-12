@@ -15,52 +15,46 @@
 <body>
     <header>
         <nav>
-            <img src="img/car-logo.png" class="logo" alt="Car Logo">
-            <div class="menu" id="menu">
+            <img src="img/car-logo.png" class="logo" alt="">
+            <div class="menu">
                 <a href="index.html">Home</a>
                 <a href="buy.html">Buy</a>
                 <a href="sell.html">Sell</a>
                 <a href="rent.html">Rent</a>
-                <a href="garage.html">Garage & Spare parts</a>
+                <a href="garage.html">Garage & Spear parts</a>
                 <a href="about.html">About Us</a>
                 <a href="contact.html">Contact Us</a>
             </div>
+
             <div class="social">
                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
-            <div class="menu-toggle" id="menu-toggle">
-                <i class="fa fa-bars"></i>
-            </div>
         </nav>
     </header>
     
     <div class="hero">
+
         <div class="text">
             <h4>Powerful, Fun and</h4>
             <h1>Fierce to <br> <span>Drive</span></h1>
-            <p>Real Poise, Real Power, Real Performance.</p>
+            <p>Real Poise, Real Power, Real Perfomance.</p>
             <a href="rent.html" class="btn">Rent</a>
         </div>
     </div>
 
     <script>
         let heroBg = document.querySelector('.hero');
-        let menuToggle = document.getElementById('menu-toggle');
-        let menu = document.getElementById('menu');
 
         setInterval(() => {
-            heroBg.style.backgroundImage = "url(bg-light.jpg)";
+            heroBg.style.backgroundImage = "url(img/bg-light.jpg)"
             
             setTimeout(() => {
-                heroBg.style.backgroundImage = "url(bg.jpg)";
+                heroBg.style.backgroundImage = "url(img/bg.jpg)"
             }, 1000);
         }, 2200);
-
-        menuToggle.addEventListener('click', () => {
-            menu.classList.toggle('active');
-        });
+        
     </script>
 </body>
 </html>
